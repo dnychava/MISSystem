@@ -1,0 +1,2261 @@
+{
+	"newFMRCode": null,
+	"oldFMRCode": null,
+	"name": "National Health Mission",
+	"totBudgetAmtInLakh": 0,
+	"totExpenditureAmtInLakh": 0,
+	"unitDTOList": [
+		{
+			"unitRid": 1,
+			"unitName": "Mumbai HQ 1",
+			"totBudgetAmtInLakh": 0,
+			"totExpenditureAmtInLakh": 0,
+			"mainProgramReportDTOList": [
+				{
+					"newFMRCode": "\t1\t",
+					"oldFMRCode": "No\t1\t",
+					"name": "\tService Delivery - Facility Based\t",
+					"totBudgetAmtInLakh": 0,
+					"totExpenditureAmtInLakh": 0,
+					"mainSubProgramReportDTOList": [
+						{
+							"newFMRCode": "1.1",
+							"oldFMRCode": "No1",
+							"name": "Service Delivery",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "1.1.1",
+									"oldFMRCode": "No1",
+									"name": "Strengthening MH Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.1.1",
+											"oldFMRCode": "A.1.5.4",
+											"name": "PMSMA activities at State/ District level",
+											"totBudgetAmtInLakh": 2.00,
+											"totExpenditureAmtInLakh": 2.00
+										},
+										{
+											"newFMRCode": "1.1.1.2",
+											"oldFMRCode": "A.1.6.3",
+											"name": "Diet services for JSSK Beneficaries (3 days for Normal Delivery and 7 days for Caesarean)",
+											"totBudgetAmtInLakh": 84.50,
+											"totExpenditureAmtInLakh": 84.50
+										},
+										{
+											"newFMRCode": "1.1.1.3",
+											"oldFMRCode": "A.1.6.2",
+											"name": "Blood Transfusion for JSSK Beneficiaries",
+											"totBudgetAmtInLakh": 5.93,
+											"totExpenditureAmtInLakh": 5.93
+										},
+										{
+											"newFMRCode": "1.1.1.5",
+											"oldFMRCode": "new",
+											"name": "LaQshya Related Activities",
+											"totBudgetAmtInLakh": 3.50,
+											"totExpenditureAmtInLakh": 3.50
+										},
+										{
+											"newFMRCode": "1.1.1.6",
+											"oldFMRCode": "No",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.2",
+									"oldFMRCode": "No2",
+									"name": "Strengthening CH Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.2.1",
+											"oldFMRCode": "A.5.1.5",
+											"name": "New born screening-  Inborn error of metabolism (please give details per unit cost of screening, number of children to be screened and the delivery points Add details)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.2.3",
+											"oldFMRCode": "A.5.2",
+											"name": "Referral Support for Secondary/ Tertiary care (pl give unit cost and unit of measure as per RBSK guidelines) - RBSK",
+											"totBudgetAmtInLakh": 2.09,
+											"totExpenditureAmtInLakh": 2.09
+										},
+										{
+											"newFMRCode": "1.1.2.4",
+											"oldFMRCode": "No",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.3",
+									"oldFMRCode": "No3",
+									"name": "Strengthening FP Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.3.1",
+											"oldFMRCode": "A.3.1",
+											"name": "Terminal/Limiting Methods",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.3.1.1",
+											"oldFMRCode": "A.3.1.1",
+											"name": "Female sterilization fixed day services",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.3.1.2",
+											"oldFMRCode": "A.3.1.2",
+											"name": "Male Sterilization fixed day services",
+											"totBudgetAmtInLakh": 0.21,
+											"totExpenditureAmtInLakh": 0.21
+										},
+										{
+											"newFMRCode": "1.1.3.2",
+											"oldFMRCode": "A.3.2",
+											"name": "Spacing Methods",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.3.2.1",
+											"oldFMRCode": "A.3.2.1",
+											"name": "IUCD fixed day services",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.3.2.1",
+											"oldFMRCode": "A.3.7.5",
+											"name": "Other activities (demand generation, strengthening service delivery etc.)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.3.3",
+											"oldFMRCode": "A.3.5.5.2",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.4",
+									"oldFMRCode": "No4",
+									"name": "Strengthening AH Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.4.1",
+											"oldFMRCode": "A.4.1.3",
+											"name": "Establishment of new clinics at Medical college/ DH/CHC/PHC level",
+											"totBudgetAmtInLakh": 3.80,
+											"totExpenditureAmtInLakh": 3.80
+										},
+										{
+											"newFMRCode": "1.1.4.2",
+											"oldFMRCode": "No",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.5",
+									"oldFMRCode": "No5",
+									"name": "Strengthening DCP Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.5.1",
+											"oldFMRCode": "F.1.2.e",
+											"name": "Dengue & Chikungunya: Case management",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.5.2",
+											"oldFMRCode": "F.1.3.i",
+											"name": "Acute Encephalitis Syndrome (AES)/ Japanese Encephalitis (JE): Rehabilitation Setup for selected endemic districts",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.5.3",
+											"oldFMRCode": "F.1.4.a",
+											"name": "Lymphatic Filariasis: Morbidity Management",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.5.4",
+											"oldFMRCode": "G.1.1",
+											"name": "Case detection & Management: Specific -plan for High Endemic Districts",
+											"totBudgetAmtInLakh": 85.20,
+											"totExpenditureAmtInLakh": 85.20
+										},
+										{
+											"newFMRCode": "1.1.5.5",
+											"oldFMRCode": "G.1.2 ",
+											"name": "Case detection & Management: Services in Urban Areas",
+											"totBudgetAmtInLakh": 1.52,
+											"totExpenditureAmtInLakh": 1.52
+										},
+										{
+											"newFMRCode": "1.1.5.6",
+											"oldFMRCode": "G.2.4",
+											"name": "Support to govt. institutions for RCS",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.6",
+									"oldFMRCode": "No6",
+									"name": "Strengthening NCD Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.6.4",
+											"oldFMRCode": "B.29.2.3",
+											"name": "Recurring Grant-in-aid (For ongoing selected district): Medical Management including Treatment, surgery and rehab",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.6.6",
+											"oldFMRCode": "B16.1.5.1",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.1.7",
+									"oldFMRCode": "No7",
+									"name": "Strengthening Other Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.1.7.1",
+											"oldFMRCode": "A.6.1",
+											"name": "Special plans for tribal areas",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.7.2",
+											"oldFMRCode": "A.11.3",
+											"name": "LWE affected areas special plan",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.1.7.3",
+											"oldFMRCode": "B14.3",
+											"name": "Transfusion support to patients with blood disorders  and for prevention programs",
+											"totBudgetAmtInLakh": 6.84,
+											"totExpenditureAmtInLakh": 6.84
+										},
+										{
+											"newFMRCode": "1.1.7.5",
+											"oldFMRCode": "B18.3",
+											"name": "Strengthening of Subcenters as first post of call to provide comprehensive primary healthcare: strengthening of in-house services/ through hub and spoke model (PPP model to be budgeted under FMR 15.9)",
+											"totBudgetAmtInLakh": 17.50,
+											"totExpenditureAmtInLakh": 17.50
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "1.2",
+							"oldFMRCode": "No2",
+							"name": "Beneficiary Compensation/ Allowances",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "1.2.1",
+									"oldFMRCode": "No8",
+									"name": "Beneficiary Compensation under Janani Suraksha Yojana (JSY)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.2.1.1",
+											"oldFMRCode": "A.1.3.1",
+											"name": "Home deliveries",
+											"totBudgetAmtInLakh": 1.68,
+											"totExpenditureAmtInLakh": 1.68
+										},
+										{
+											"newFMRCode": "1.2.1.2",
+											"oldFMRCode": "A.1.3.2",
+											"name": "Institutional deliveries ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.2.1.2.a",
+											"oldFMRCode": "A.1.3.2.a",
+											"name": "Rural",
+											"totBudgetAmtInLakh": 99.49,
+											"totExpenditureAmtInLakh": 99.49
+										},
+										{
+											"newFMRCode": "1.2.1.2.b",
+											"oldFMRCode": "A.1.3.2.b",
+											"name": "Urban",
+											"totBudgetAmtInLakh": 13.29,
+											"totExpenditureAmtInLakh": 13.29
+										},
+										{
+											"newFMRCode": "1.2.1.2.c",
+											"oldFMRCode": "A.1.3.2.c",
+											"name": "C-sections",
+											"totBudgetAmtInLakh": 9.98,
+											"totExpenditureAmtInLakh": 9.98
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.2.2",
+									"oldFMRCode": "No9",
+									"name": "Beneficiary Compensation under FP Services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.2.2.1",
+											"oldFMRCode": "A.3.1",
+											"name": "Terminal/Limiting Methods",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.2.2.1.a",
+											"oldFMRCode": "A.3.1.3",
+											"name": "\"Compensation for female sterilization\"",
+											"totBudgetAmtInLakh": 112.22,
+											"totExpenditureAmtInLakh": 112.22
+										},
+										{
+											"newFMRCode": "1.2.2.1.b",
+											"oldFMRCode": "A.3.1.4",
+											"name": "\"Compensation for male sterilization\"",
+											"totBudgetAmtInLakh": 1.09,
+											"totExpenditureAmtInLakh": 1.09
+										},
+										{
+											"newFMRCode": "1.2.2.2",
+											"oldFMRCode": "A.3.2",
+											"name": "Spacing Methods",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.2.2.2.a",
+											"oldFMRCode": "A.3.2.2",
+											"name": "\"Compensation for IUCD insertion at health facilities",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.2.2.2.b",
+											"oldFMRCode": "A.3.2.3",
+											"name": "PPIUCD services: Compensation to beneficiary@Rs 300/PPIUCD insertion",
+											"totBudgetAmtInLakh": 8.55,
+											"totExpenditureAmtInLakh": 8.55
+										},
+										{
+											"newFMRCode": "1.2.2.2.c",
+											"oldFMRCode": "A.3.2.4",
+											"name": "PAIUCD Services: Compensation to beneficiary@Rs 300 per PAIUCD insertion) ",
+											"totBudgetAmtInLakh": 0.22,
+											"totExpenditureAmtInLakh": 0.22
+										},
+										{
+											"newFMRCode": "1.2.2.2.d",
+											"oldFMRCode": "A.3.7.3",
+											"name": "Injectable contraceptive incentive for beneficiaries",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.2.2.3",
+											"oldFMRCode": "A.3.6",
+											"name": "Family Planning Indemnity Scheme",
+											"totBudgetAmtInLakh": 9.00,
+											"totExpenditureAmtInLakh": 9.00
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.2.3",
+									"oldFMRCode": "No10",
+									"name": "Others (including PMSMA, any other)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.2.3.1",
+											"oldFMRCode": "G.2.3",
+											"name": "Welfare  allowance to patients for RCS",
+											"totBudgetAmtInLakh": 3.44,
+											"totExpenditureAmtInLakh": 3.44
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "1.3",
+							"oldFMRCode": "No3",
+							"name": "Operating Expenses",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "1.3.1",
+									"oldFMRCode": "No11",
+									"name": "Operating expenses for Facilities (e.g. operating cost rent, electricity, stationary, internet, office expense etc.)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.3.1.1.",
+											"oldFMRCode": "A.2.2.1",
+											"name": "SNCU",
+											"totBudgetAmtInLakh": 13.72,
+											"totExpenditureAmtInLakh": 13.72
+										},
+										{
+											"newFMRCode": "1.3.1.10",
+											"oldFMRCode": "O.2.2.1.5",
+											"name": "PHC level: Mobility , Miscellaneous & Contingencies",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.1.11",
+											"oldFMRCode": "O.2.2.1.7",
+											"name": "Sub-Centre level: Mobility , Miscellaneous & Contingencies",
+											"totBudgetAmtInLakh": 0.26,
+											"totExpenditureAmtInLakh": 0.26
+										},
+										{
+											"newFMRCode": "1.3.1.12",
+											"oldFMRCode": "H.5",
+											"name": "Maintenance of office equipment for DTC, DRTB centre and Labs (under RNTCP)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.1.13",
+											"oldFMRCode": "B15.3.2.7",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 4.65,
+											"totExpenditureAmtInLakh": 4.65
+										},
+										{
+											"newFMRCode": "1.3.1.2",
+											"oldFMRCode": "A.2.2.2",
+											"name": "NBSU",
+											"totBudgetAmtInLakh": 5.00,
+											"totExpenditureAmtInLakh": 5.00
+										},
+										{
+											"newFMRCode": "1.3.1.3",
+											"oldFMRCode": "A.2.2.3",
+											"name": "NBCC",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.1.4",
+											"oldFMRCode": "A.2.5",
+											"name": "NRCs",
+											"totBudgetAmtInLakh": 3.45,
+											"totExpenditureAmtInLakh": 3.45
+										},
+										{
+											"newFMRCode": "1.3.1.5",
+											"oldFMRCode": "A.2.10.2",
+											"name": "Family participatory care (KMC)",
+											"totBudgetAmtInLakh": 0.44,
+											"totExpenditureAmtInLakh": 0.44
+										},
+										{
+											"newFMRCode": "1.3.1.6",
+											"oldFMRCode": "A.4.1.3",
+											"name": "AH/ RKSK Clinics",
+											"totBudgetAmtInLakh": 0.50,
+											"totExpenditureAmtInLakh": 0.50
+										},
+										{
+											"newFMRCode": "1.3.1.7",
+											"oldFMRCode": "A.5.1.4/ B16.1.6.3.5",
+											"name": "DEIC (including Data card internet connection for laptops and rental)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.1.8",
+											"oldFMRCode": "O.2.2.1.3/ O1.1.3.1",
+											"name": "District NCD Clinic: Strengthening of lab, Mobility , Miscellaneous & Contingencies",
+											"totBudgetAmtInLakh": 1.00,
+											"totExpenditureAmtInLakh": 1.00
+										},
+										{
+											"newFMRCode": "1.3.1.9",
+											"oldFMRCode": "O.2.2.1.4",
+											"name": "CHC NCD Clinic: Mobility , Miscellaneous & Contingencies",
+											"totBudgetAmtInLakh": 1.25,
+											"totExpenditureAmtInLakh": 1.25
+										}
+									]
+								},
+								{
+									"newFMRCode": "1.3.2",
+									"oldFMRCode": "No12",
+									"name": "Other operating expenses",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "1.3.2.1",
+											"oldFMRCode": "B.23.1",
+											"name": "Power Back-up for blood bank/storage (ideally integrated power back up for facility)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.2.2",
+											"oldFMRCode": "B.29.1.3",
+											"name": "Recurring Grant-in-aid (For newly selected districts under NPPF):  Laboratory Diagnostic facilities",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.2.3",
+											"oldFMRCode": "B.29.2.2",
+											"name": "Recurring Grant-in-aid (For ongoing selected districts under NPPF):  Laboratory Diagnostic facilities",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.2.4",
+											"oldFMRCode": "C.1.m",
+											"name": "Consumables for computer including provision for internet access  for strengthening RI",
+											"totBudgetAmtInLakh": 0.05,
+											"totExpenditureAmtInLakh": 0.05
+										},
+										{
+											"newFMRCode": "1.3.2.5",
+											"oldFMRCode": "B.27.1.3",
+											"name": "Miscellaneous including Travel/ POL/ Stationary/ Communications/ Drugs etc.",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "1.3.2.6",
+											"oldFMRCode": "B13.2.1",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"newFMRCode": "2",
+					"oldFMRCode": "No2",
+					"name": "Service Delivery - Community Based",
+					"totBudgetAmtInLakh": 0,
+					"totExpenditureAmtInLakh": 0,
+					"mainSubProgramReportDTOList": [
+						{
+							"newFMRCode": "2.1",
+							"oldFMRCode": "No4",
+							"name": "Mobile Units",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "2.1.1",
+									"oldFMRCode": "B11",
+									"name": "National Mobile Medical Units (MMU)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.1.1.1",
+											"oldFMRCode": "B11.1.1",
+											"name": "Capex",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.1.1.2",
+											"oldFMRCode": "B11.1.2",
+											"name": "Opex",
+											"totBudgetAmtInLakh": 22.96,
+											"totExpenditureAmtInLakh": 22.96
+										}
+									]
+								},
+								{
+									"newFMRCode": "2.1.2",
+									"oldFMRCode": "B11.2",
+									"name": "National Mobile Medical Vans (smaller vehicles) and specialised Mobile Medical Units",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.1.2.1",
+											"oldFMRCode": "B11.2.1",
+											"name": "Capex",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.1.2.2",
+											"oldFMRCode": "B11.2.2",
+											"name": "Opex",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "2.1.3",
+									"oldFMRCode": "No13",
+									"name": "Other Mobile Units",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.1.3.1",
+											"oldFMRCode": "B11.2.4",
+											"name": "Blood collection and Transport Vans",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.1.3.2",
+											"oldFMRCode": "I.2.8",
+											"name": "Grant in aid for Mobile Ophthalmic Units ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.1.3.3",
+											"oldFMRCode": "B11.2.6.1/B11.2.6.2",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "2.2",
+							"oldFMRCode": "No5",
+							"name": "Recurring/ Operational cost",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "2.2",
+									"oldFMRCode": "Dummy",
+									"name": "Recurring/ Operational cost",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.2.1",
+											"oldFMRCode": "A.3.3",
+											"name": "POL for Family Planning/ Others (including additional mobility support to surgeons team if req)",
+											"totBudgetAmtInLakh": 11.71,
+											"totExpenditureAmtInLakh": 11.71
+										},
+										{
+											"newFMRCode": "2.2.2",
+											"oldFMRCode": "A.4.1.4",
+											"name": "Mobility & Communication support for AH counsellors",
+											"totBudgetAmtInLakh": 0.96,
+											"totExpenditureAmtInLakh": 0.96
+										},
+										{
+											"newFMRCode": "2.2.3",
+											"oldFMRCode": "A.5.1.3",
+											"name": "Mobility support  for RBSK Mobile health team",
+											"totBudgetAmtInLakh": 151.20,
+											"totExpenditureAmtInLakh": 151.20
+										},
+										{
+											"newFMRCode": "2.2.4",
+											"oldFMRCode": "B16.1.6.3.6",
+											"name": "Support for RBSK: CUG connection per team and rental",
+											"totBudgetAmtInLakh": 3.78,
+											"totExpenditureAmtInLakh": 3.78
+										},
+										{
+											"newFMRCode": "2.2.8",
+											"oldFMRCode": "C.6",
+											"name": "Pulse Polio operating costs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.2.9",
+											"oldFMRCode": "C.1.s",
+											"name": "Measles Rubella SIA operational Cost",
+											"totBudgetAmtInLakh": 108.48,
+											"totExpenditureAmtInLakh": 108.48
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "2.3",
+							"oldFMRCode": "No6",
+							"name": "Outreach activities ",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "2.3.1",
+									"oldFMRCode": "No14",
+									"name": "Outreach activities for RMNCH+A services",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.3.1.1",
+											"oldFMRCode": "A.1.2",
+											"name": "Integrated outreach RCH services (state should focus on facility based services and outreach camps to be restricted only to areas without functional health facilities)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.1.2",
+											"oldFMRCode": "A.1.5.1",
+											"name": "Line listing and follow-up of severely anaemic women",
+											"totBudgetAmtInLakh": 6.18,
+											"totExpenditureAmtInLakh": 6.18
+										},
+										{
+											"newFMRCode": "2.3.1.3",
+											"oldFMRCode": "A.1.5.2",
+											"name": "Line listing of the women with blood disorders",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.1.4",
+											"oldFMRCode": "A.1.5.3",
+											"name": "Follow up mechanism for the severly anemic women and the women with blood disorders",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.1.5",
+											"oldFMRCode": "A.4.2.2",
+											"name": "Organizing Adolescent Health day",
+											"totBudgetAmtInLakh": 11.25,
+											"totExpenditureAmtInLakh": 11.25
+										},
+										{
+											"newFMRCode": "2.3.1.6",
+											"oldFMRCode": "A.4.2.3",
+											"name": "Organising Adolescent Friendly Club  meetings at subcentre level ",
+											"totBudgetAmtInLakh": 2.49,
+											"totExpenditureAmtInLakh": 2.49
+										},
+										{
+											"newFMRCode": "2.3.1.8",
+											"oldFMRCode": "A.11.2",
+											"name": "Services for Vulnerable groups",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.1.9",
+											"oldFMRCode": "C.1.f",
+											"name": "Focus on slum & underserved areas in urban areas/alternative vaccinator for slums (only where regular ANM under NUHM not engaged)",
+											"totBudgetAmtInLakh": 2.70,
+											"totExpenditureAmtInLakh": 2.70
+										}
+									]
+								},
+								{
+									"newFMRCode": "2.3.2",
+									"oldFMRCode": "No15",
+									"name": "Outreach activities for controlling DCPs & NCDs",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.3.2.1",
+											"oldFMRCode": "B18.2",
+											"name": "Universal health check-up and screening of NCDs",
+											"totBudgetAmtInLakh": 4.45,
+											"totExpenditureAmtInLakh": 4.45
+										},
+										{
+											"newFMRCode": "2.3.2.3",
+											"oldFMRCode": "J.1.3",
+											"name": "DMHP: Targeted interventions at community level Activities & interventions targeted at schools, colleges, workplaces, out of school adolescents, urban slums and suicide prevention.",
+											"totBudgetAmtInLakh": 3.00,
+											"totExpenditureAmtInLakh": 3.00
+										},
+										{
+											"newFMRCode": "2.3.2.4",
+											"oldFMRCode": "I.1.5",
+											"name": "Recurring grant for collection of eye balls by eye banks and eye donation centres",
+											"totBudgetAmtInLakh": 2.75,
+											"totExpenditureAmtInLakh": 2.75
+										},
+										{
+											"newFMRCode": "2.3.2.5",
+											"oldFMRCode": "M.2.1.1",
+											"name": "Tobacco Cessation Centre (TCC): Weekly FGD with the tobacco users",
+											"totBudgetAmtInLakh": 0.65,
+											"totExpenditureAmtInLakh": 0.65
+										}
+									]
+								},
+								{
+									"newFMRCode": "2.3.3",
+									"oldFMRCode": "No16",
+									"name": "Outreach activities at School level",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "2.3.3.1",
+											"oldFMRCode": "A.2.10.1",
+											"name": "One time Secreening to Identify the carriers of Sickle cell trait, ß Thalassemia, Haemoglobin variants at school especially class 8 students ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.3.2",
+											"oldFMRCode": "I.1.3",
+											"name": "Screening and free spectacles to school children  @ Rs.275/- per case",
+											"totBudgetAmtInLakh": 1.05,
+											"totExpenditureAmtInLakh": 1.05
+										},
+										{
+											"newFMRCode": "2.3.3.3",
+											"oldFMRCode": "I.1.4",
+											"name": "Screening and free spectacles for near work to Old Person (New component) @Rs.100/- per case",
+											"totBudgetAmtInLakh": 1.05,
+											"totExpenditureAmtInLakh": 1.05
+										},
+										{
+											"newFMRCode": "2.3.3.4",
+											"oldFMRCode": "M.1.2",
+											"name": "NTCP Programme at School level",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "2.3.3.4.1",
+											"oldFMRCode": "M.1.2.1",
+											"name": "Coverage of Public School",
+											"totBudgetAmtInLakh": 0.90,
+											"totExpenditureAmtInLakh": 0.90
+										},
+										{
+											"newFMRCode": "2.3.3.4.2",
+											"oldFMRCode": "M.1.2.2",
+											"name": "Coverage of Pvt. School",
+											"totBudgetAmtInLakh": 0.30,
+											"totExpenditureAmtInLakh": 0.30
+										},
+										{
+											"newFMRCode": "2.3.3.4.3",
+											"oldFMRCode": "M.1.2.3",
+											"name": "Coverage of Public School in others school programme",
+											"totBudgetAmtInLakh": 0.45,
+											"totExpenditureAmtInLakh": 0.45
+										},
+										{
+											"newFMRCode": "2.3.3.4.4",
+											"oldFMRCode": "M.1.2.4",
+											"name": "Coverage of Pvt. School in others school programme",
+											"totBudgetAmtInLakh": 0.15,
+											"totExpenditureAmtInLakh": 0.15
+										},
+										{
+											"newFMRCode": "2.3.3.4.5",
+											"oldFMRCode": "M.1.2.5",
+											"name": "Sensitization campaign for college students",
+											"totBudgetAmtInLakh": 0.30,
+											"totExpenditureAmtInLakh": 0.30
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"newFMRCode": "3",
+					"oldFMRCode": "No3",
+					"name": "Community Interventions",
+					"totBudgetAmtInLakh": 0,
+					"totExpenditureAmtInLakh": 0,
+					"mainSubProgramReportDTOList": [
+						{
+							"newFMRCode": "3.1",
+							"oldFMRCode": "No7",
+							"name": "ASHA Activities",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "3.1.1",
+									"oldFMRCode": "No17",
+									"name": "Performance Incentive/Other Incentive to ASHAs",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.1.1.1",
+											"oldFMRCode": "No",
+											"name": "Incentive for MCH Services",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.1",
+											"oldFMRCode": "A.1.3.4 ",
+											"name": "JSY Incentive to ASHA ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.11",
+											"oldFMRCode": "C.5",
+											"name": "ASHA Incentive under Immunzation",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.12",
+											"oldFMRCode": "B1.1.3.6/B1.1.3.1.1/B1.1.3.1.2/B14.2",
+											"name": "Any other ASHA incentives (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.2",
+											"oldFMRCode": "B1.1.3.2.6",
+											"name": "ASHA incentive under MAA programme @ Rs 100 per ASHA for quarterly mothers meeting ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.3",
+											"oldFMRCode": "B1.1.3.2.1",
+											"name": "Incentive for Home Based Newborn Care programme",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.4",
+											"oldFMRCode": "B1.1.3.2.2",
+											"name": "Incentive to ASHA for follow up of SNCU discharge babies and for follow up of LBW babies",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.5",
+											"oldFMRCode": "B1.1.3.2.4",
+											"name": "Incentive for referral of SAM cases to NRC and for follow up of discharge SAM children from NRCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.6",
+											"oldFMRCode": "B1.1.3.2.7",
+											"name": "Incentive for National Deworming Day  for mobilising out of school children",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.7",
+											"oldFMRCode": "B1.1.3.2.8",
+											"name": "Incentive for IDCF for prophylactic distribution of ORS  to family with under-five children. ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.8",
+											"oldFMRCode": "B1.1.3.5.1",
+											"name": "National Iron Plus Incentive for mobilizing WRA (non pregnant & non-lactating Women 20-49 years)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.1.9",
+											"oldFMRCode": "B1.1.3.5.2",
+											"name": "National Iron Plus Incentive for mobilizing children and/or ensuring compliance and reporting (6-59 months)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.2",
+											"oldFMRCode": "No",
+											"name": "Incentive for FP Services",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.2.4",
+											"oldFMRCode": "B1.1.3.3.1",
+											"name": "ASHA PPIUCD incentive for accompanying the client for PPIUCD insertion (@ Rs. 150/ASHA/insertion)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.2.5",
+											"oldFMRCode": "B1.1.3.3.2",
+											"name": "ASHA PAIUCD incentive for accompanying the client for PAIUCD insertion (@ Rs. 150/ASHA/insertion)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.2.6",
+											"oldFMRCode": "B1.1.3.3.3",
+											"name": "ASHA incentive under ESB scheme for promoting spacing of births",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.2.7",
+											"oldFMRCode": "B1.1.3.3.4",
+											"name": "ASHA Incentive under ESB scheme for promoting adoption of limiting method upto two children",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.3",
+											"oldFMRCode": "No",
+											"name": "Incentive for AH/ RKSK Services",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.3.1",
+											"oldFMRCode": "B.1.1.3.4.1",
+											"name": "Incentive for support to Peer Educator",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.3.2",
+											"oldFMRCode": "B.1.1.3.4.2",
+											"name": "Incentive for mobilizing adolescents  and community for AHD",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.3.3",
+											"oldFMRCode": "B.1.1.3.4.3",
+											"name": "Any other ASHA incentives (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4",
+											"oldFMRCode": "No",
+											"name": "Incentive for DCPs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.1",
+											"oldFMRCode": "F.1.1.b",
+											"name": "ASHA Incentive/ Honorarium for Malaria",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.2",
+											"oldFMRCode": "F.1.2.i",
+											"name": "ASHA Incentive for Dengue and Chikungunya",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.5",
+											"oldFMRCode": "F.1.4.e",
+											"name": "Honorarium  for Drug Distribution including ASHAs and supervisors involved in MDA",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.7",
+											"oldFMRCode": "G.1.3.a",
+											"name": "ASHA Involvement under NLEP - Sensitisation",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.7.a",
+											"oldFMRCode": "G.1.3.b.i",
+											"name": "ASHA incentive for detection of leprosy",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.7.b",
+											"oldFMRCode": "G.1.3.b.ii",
+											"name": "ASHA Incentive for PB (Treatment completion)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.7.c",
+											"oldFMRCode": "G.1.3.b.iii",
+											"name": "ASHA Incentive for MB (Treatment completion)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.4.8",
+											"oldFMRCode": "new",
+											"name": "Any other ASHA incentives (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.5",
+											"oldFMRCode": "No",
+											"name": "Incentive for NCDs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.5.1",
+											"oldFMRCode": "D.5",
+											"name": "ASHA Incentive under NIDDCP",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.5.2",
+											"oldFMRCode": "B1.1.3.6.9",
+											"name": "Any other ASHA incentives (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.6",
+											"oldFMRCode": "No",
+											"name": "Other Incentives ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.6.1",
+											"oldFMRCode": "B1.1.3.6.1",
+											"name": "ASHA incentives for routine activities ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.1.6.2",
+											"oldFMRCode": "B1.1.3.6.6/B1.1.3.6.3/B1.1.3.6.4/B1.1.3.6.5",
+											"name": "Any other ASHA incentives (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "3.1.2",
+									"oldFMRCode": "B1.1.1",
+									"name": "Selection & Training of ASHA",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.1.2.1",
+											"oldFMRCode": "B1.1.1.1",
+											"name": "Induction training",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.2",
+											"oldFMRCode": "B1.1.1.2",
+											"name": "Module VI & VII ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.3",
+											"oldFMRCode": "B1.1.1.3",
+											"name": "Supplementary training for ASHAs ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.4",
+											"oldFMRCode": "B1.2",
+											"name": "Certification of ASHA by NIOS",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.6",
+											"oldFMRCode": "A.9.12.5",
+											"name": "Training/Refresher training -ASHA (one day) (RBSK trainings)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.7",
+											"oldFMRCode": "B1.1.1.5.1",
+											"name": "Training of ASHA facilitator",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.2.8",
+											"oldFMRCode": "B.1.1.5",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "3.1.3",
+									"oldFMRCode": "No18",
+									"name": "Miscellaneous ASHA Costs",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.1.3.1",
+											"oldFMRCode": "B1.1.1.4.1",
+											"name": "Supervision costs  by ASHA facilitators(12 months)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.3.2",
+											"oldFMRCode": "B1.1.3.7",
+											"name": "Support provisions to ASHA (Uniform)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.3.3",
+											"oldFMRCode": "B1.1.4",
+											"name": "Awards to ASHAs/Link workers",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.3.4",
+											"oldFMRCode": "C.1.g",
+											"name": "Mobilization of children through ASHA or other mobilizers",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.1.3.5",
+											"oldFMRCode": "C.1.v",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "3.2",
+							"oldFMRCode": "No8",
+							"name": "Other Community Interventions",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "3.2",
+									"oldFMRCode": "Dummy19",
+									"name": "Other Community Interventions",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.2.1",
+											"oldFMRCode": "A.3.7.5",
+											"name": "Other activities under Mission Parivar Vikas : Demand Generation (Saarthi, Saas Bahu Sammellan, Creating enabling environment)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.2",
+											"oldFMRCode": "A.4.2.1",
+											"name": "Incentives for Peer Educators",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.3",
+											"oldFMRCode": "H.3",
+											"name": "Honorarium/Counselling Charges for RNTCP",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "3.2.4",
+									"oldFMRCode": "B15.1",
+									"name": "Community Action for Health (Visioning workshops at state, dist., block level, Training of VHSNC, Training of RKS)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.2.4.1",
+											"oldFMRCode": "B15.1.1",
+											"name": "State level",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.4.2",
+											"oldFMRCode": "B15.1.2",
+											"name": "District level",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.4.3",
+											"oldFMRCode": "B15.1.3",
+											"name": "Block level ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.4.4",
+											"oldFMRCode": "B15.1.4.1",
+											"name": "Constitution / Reconstitution of VHSNC",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.4.5",
+											"oldFMRCode": "B15.1.4",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "3.2.5",
+									"oldFMRCode": "No20",
+									"name": "Preventive Strategies",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.2.5.1",
+											"oldFMRCode": "F.1.1.c",
+											"name": "Preventive strategies for Malaria",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.1.1",
+											"oldFMRCode": "F.1.1.c.i",
+											"name": "Operational cost for Spray Wages ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.1.2",
+											"oldFMRCode": "F.1.1.c.ii",
+											"name": "Operational cost for IRS",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.1.3",
+											"oldFMRCode": "F.1.1.c.iii",
+											"name": "Operational cost for Impregnation  of Bed nets-  for NE states",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.1.4",
+											"oldFMRCode": "F.1.1.h",
+											"name": "Biological and Environmental Management through VHSC",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.1.5",
+											"oldFMRCode": "F.1.1.i",
+											"name": "Larvivorous Fish support",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.2",
+											"oldFMRCode": "F.1.1.c",
+											"name": "Preventive strategies for vector born diseases",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.2.1",
+											"oldFMRCode": "F.1.2.f",
+											"name": "Dengue & Chikungunya: Vector Control,  environmental management & fogging machine",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.2.2",
+											"oldFMRCode": "F.1.3.g",
+											"name": "Acute Encephalitis Syndrome (AES)/ Japanese Encephalitis (JE): Operational costs for malathion  fogging",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.2.3",
+											"oldFMRCode": "F.1.5.b",
+											"name": "Kala-azar: Operational cost for spray including spray wages",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.2.4",
+											"oldFMRCode": "F.1.5.e",
+											"name": "Kala-azar: Training for spraying",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.3",
+											"oldFMRCode": "J.1.3",
+											"name": "District counselling centre (DCC) and crisis helpline outsourced to psychology department/ NGO per year",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.2.5.4",
+											"oldFMRCode": "No",
+											"name": "Any other (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "3.3",
+							"oldFMRCode": "B8",
+							"name": "Panchayati Raj Institutions (PRIs)",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "3.3",
+									"oldFMRCode": "Dummy21",
+									"name": "Panchayati Raj Institutions (PRIs)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.3.1",
+											"oldFMRCode": "B8.1",
+											"name": "Orientation of Community leader & of VHSC,SHC,PHC,CHC etc.",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "3.3.3",
+									"oldFMRCode": "No22",
+									"name": "PRI Sensitization/Trainings",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "3.3.3.1",
+											"oldFMRCode": "E.2.9",
+											"name": "One day sensitization for PRIs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "3.3.3.2",
+											"oldFMRCode": "M.1.1.4",
+											"name": "Training of PRIs representatives/ Police personnel/ Teachers/ Transport personnel/ NGO personnel/ other stakeholders",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"newFMRCode": "4",
+					"oldFMRCode": "No4",
+					"name": "Untied Fund",
+					"totBudgetAmtInLakh": 0,
+					"totExpenditureAmtInLakh": 0,
+					"mainSubProgramReportDTOList": [
+						{
+							"newFMRCode": "4.1",
+							"oldFMRCode": "B2",
+							"name": "Untied Funds/Annual Maintenance Grants /Corpus Grants to HMS/RKS",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "4.1",
+									"oldFMRCode": "Dummy20",
+									"name": "Dummy",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "4.1.1",
+											"oldFMRCode": "B2.1",
+											"name": "District Hospitals ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.2",
+											"oldFMRCode": "B2.2",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.3",
+											"oldFMRCode": "B2.3",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.4",
+											"oldFMRCode": "B2.4",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.5",
+											"oldFMRCode": "B2.5",
+											"name": "Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.6",
+											"oldFMRCode": "B2.6",
+											"name": "VHSC",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "4.1.7",
+											"oldFMRCode": "B2.7",
+											"name": "Others (please specify)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"newFMRCode": "5",
+					"oldFMRCode": "No5",
+					"name": "Infrastructure",
+					"totBudgetAmtInLakh": 0,
+					"totExpenditureAmtInLakh": 0,
+					"mainSubProgramReportDTOList": [
+						{
+							"newFMRCode": "5.1",
+							"oldFMRCode": "No9",
+							"name": "Upgradation of existing facilities",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "5.1.1",
+									"oldFMRCode": "B.4.1",
+									"name": "Upgradation of CHCs, PHCs, Dist. Hospitals and other Institutions ",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "5.1.1.1.a",
+											"oldFMRCode": "B4.1.1.1",
+											"name": "District Hospitals (As per the DH Strengthening Guidelines)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.b",
+											"oldFMRCode": "B4.1.6.1",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.c",
+											"oldFMRCode": "B4.1.2.1",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.d",
+											"oldFMRCode": "B4.1.3.1",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.e",
+											"oldFMRCode": "B4.1.4.1",
+											"name": "Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.f",
+											"oldFMRCode": "B4.1.5.2",
+											"name": "MCH Wings",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.g",
+											"oldFMRCode": "B.5.6.3",
+											"name": "Facility based newborn care centres (SNCU/NBSU/NBCC/KMC unit)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.h",
+											"oldFMRCode": "I.2.7",
+											"name": "Grant-in-aid for construction of Eye Wards and Eye OTS (renamed as  dedicated eye unit)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.i",
+											"oldFMRCode": "B.5.10.1.1",
+											"name": "Training Institutions",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.1.j",
+											"oldFMRCode": "No",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2",
+											"oldFMRCode": "B4.1.1/ B4.1.2/ B4.1.3/ B4.1.4/ B4.1.6/ B.5.10",
+											"name": "Upgradation/ Renovation",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.a",
+											"oldFMRCode": "B4.1.1.2",
+											"name": "District Hospitals (As per the DH Strengthening Guidelines)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.b",
+											"oldFMRCode": "B.26.1.1",
+											"name": "Renovation, Dental Chair, Equipment - District Hospitals ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.c",
+											"oldFMRCode": "B.27.1.4",
+											"name": "Renovation of PC unit/OPD/Beds/Miscellaneous equipment etc.",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.d",
+											"oldFMRCode": "B4.1.6.2",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.e",
+											"oldFMRCode": "B4.1.2.2",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.f",
+											"oldFMRCode": "B4.1.3.2",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.g",
+											"oldFMRCode": "B4.1.4.2",
+											"name": "Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.h",
+											"oldFMRCode": "B18.3",
+											"name": "Infrastructure strengthening of SC to H&WC",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.i",
+											"oldFMRCode": "B.5.10.1.2",
+											"name": "Training Institutions",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.j",
+											"oldFMRCode": "No",
+											"name": "Drug Warehouses",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.k",
+											"oldFMRCode": "new",
+											"name": "Upgradation/ Renovation of Obstetric ICUs/ HDUs (as per operational guidelines of ICUs and HDUs, 2017)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.2.l",
+											"oldFMRCode": "No",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.a",
+											"oldFMRCode": "B4.1.1.3",
+											"name": "District Hospitals (As per the DH Strengthening Guidelines)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.b",
+											"oldFMRCode": "B4.1.6.3",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.c",
+											"oldFMRCode": "B4.1.2.3",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.d",
+											"oldFMRCode": "B4.1.3.3",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.e",
+											"oldFMRCode": "B4.1.4.3",
+											"name": "Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.f",
+											"oldFMRCode": "B4.1.5.3",
+											"name": "MCH Wings",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.g",
+											"oldFMRCode": "No",
+											"name": "Facility based newborn care centres (SNCU/NBSU/NBCC/KMC unit)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.i",
+											"oldFMRCode": "B.5.10.1.3",
+											"name": "Training Institutions",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.3.j",
+											"oldFMRCode": "No",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4",
+											"oldFMRCode": "B4.1.1/ B4.1.2/ B4.1.3/ B4.1.4/ B4.1.6/ B.5.10",
+											"name": "Staff Quarters",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.a",
+											"oldFMRCode": "B4.1.1.4",
+											"name": "District Hospitals (As per the DH Strengthening Guidelines)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.b",
+											"oldFMRCode": "B4.1.6.4",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.c",
+											"oldFMRCode": "B4.1.2.4",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.d",
+											"oldFMRCode": "B4.1.3.4",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.e",
+											"oldFMRCode": "B4.1.4.4",
+											"name": "Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.f",
+											"oldFMRCode": "B.5.10.1.4",
+											"name": "Training Institutions (incl. hostels/residential facilities)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.1.1.4.g",
+											"oldFMRCode": "No",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "5.1.2",
+									"oldFMRCode": "B.4.3",
+									"name": "Dummy - Sub Centre Rent and Contingencies",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "5.1.2",
+											"oldFMRCode": "B.4.3",
+											"name": "Sub Centre Rent and Contingencies",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "5.2",
+							"oldFMRCode": "No10",
+							"name": "New Constructions ",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "5.2.1",
+									"oldFMRCode": "B5.1/ B5.2/ B5.3/ B5.5",
+									"name": "New construction (to be initiated this year)",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "5.2.1.1",
+											"oldFMRCode": "B5.12.1",
+											"name": "DH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.10",
+											"oldFMRCode": "A.2.5",
+											"name": "Establishment of NRCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.11",
+											"oldFMRCode": "No",
+											"name": "Drug Warehouses",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.12",
+											"oldFMRCode": "B5.5",
+											"name": "Govt. Dispensaries/ others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.13",
+											"oldFMRCode": "B5.10.2/ B5.10.3",
+											"name": "Training Institutions",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.14",
+											"oldFMRCode": "new",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.2",
+											"oldFMRCode": "B5.11.1",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.3",
+											"oldFMRCode": "B5.1.1",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.4",
+											"oldFMRCode": "B5.2.1",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.5",
+											"oldFMRCode": "B5.3.1",
+											"name": "SHCs/Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.6",
+											"oldFMRCode": "B4.1.5.1",
+											"name": "MCH Wings",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.7",
+											"oldFMRCode": "B.5.6.1",
+											"name": "Facility based newborn care centres (SNCU/NBSU/NBCC/KMC unit)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.8",
+											"oldFMRCode": "B5.13.1",
+											"name": "DEIC (RBSK)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.1.9",
+											"oldFMRCode": "A.4.1.2",
+											"name": "AFHCs at Medical college/ DH/CHC/PHC level  ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								},
+								{
+									"newFMRCode": "5.2.2",
+									"oldFMRCode": "B5.1/ B5.2/ B5.3/ B5.6",
+									"name": "Carry forward of new construction initiated last year, or the year before",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "5.2.2.1",
+											"oldFMRCode": "B.5.12.2",
+											"name": "DH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.10",
+											"oldFMRCode": "No",
+											"name": "Others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.2",
+											"oldFMRCode": "B.5.11.2",
+											"name": "SDH",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.3",
+											"oldFMRCode": "B5.1.2",
+											"name": "CHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.4",
+											"oldFMRCode": "B5.2.2",
+											"name": "PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.5",
+											"oldFMRCode": "B5.3.2",
+											"name": "SHCs/Sub Centres",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.6",
+											"oldFMRCode": "B.5.6.2",
+											"name": "Facility based newborn care centres (SNCU/NBSU/NBCC/KMC unit)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.7",
+											"oldFMRCode": "B.5.13.2",
+											"name": "DEIC (RBSK)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.8",
+											"oldFMRCode": "B5.5",
+											"name": "Govt. Dispensaries/ others",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.2.2.9",
+											"oldFMRCode": "B5.10.4",
+											"name": "Training Institutions",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						},
+						{
+							"newFMRCode": "5.3",
+							"oldFMRCode": "No11",
+							"name": "Other construction/ Civil works",
+							"totBudgetAmtInLakh": 0,
+							"totExpenditureAmtInLakh": 0,
+							"mainActivityReportDTOList": [
+								{
+									"newFMRCode": "5.3",
+									"oldFMRCode": "Dummy",
+									"name": "Dummy - Other construction/ Civil works",
+									"totBudgetAmtInLakh": 0,
+									"totExpenditureAmtInLakh": 0,
+									"mainSubActivityReportDTOList": [
+										{
+											"newFMRCode": "5.3.1",
+											"oldFMRCode": "B4.1.5.4",
+											"name": "Civil Works",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.10",
+											"oldFMRCode": "D.2",
+											"name": "Establishment of IDD Monitoring Lab",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.11",
+											"oldFMRCode": "F.1.1.j",
+											"name": "Construction and maintenance of Hatcheries",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.12",
+											"oldFMRCode": "F.2.1.e",
+											"name": "Infrastructure (INF)",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.13",
+											"oldFMRCode": "F.1.3.j",
+											"name": "ICU Establishment in Endemic District",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.14",
+											"oldFMRCode": "H.1",
+											"name": "Civil Works under RNTCP",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.2",
+											"oldFMRCode": "B1.1.3.7",
+											"name": "ASHA Ghar ",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.3",
+											"oldFMRCode": "B4.1.5.4.1",
+											"name": "Blood bank/ Blood storage/ Day care centre for hemoglobinopathies",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.4",
+											"oldFMRCode": "B.5.7",
+											"name": "Operationalization of FRUS",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.5",
+											"oldFMRCode": "B.5.8",
+											"name": "Operationalization of 24 hour services at PHCs",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.6",
+											"oldFMRCode": "B.5.9",
+											"name": "Operationalising Infection Management & Environment Plan at health facilities",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.7",
+											"oldFMRCode": "new",
+											"name": "Infrastructure for paediatric OPD and ward",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.8",
+											"oldFMRCode": "B.28.1",
+											"name": "Assistance to State for Capacity building (Burns & injury): Civil Work",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										},
+										{
+											"newFMRCode": "5.3.9",
+											"oldFMRCode": "C.1.p",
+											"name": "Safety Pits",
+											"totBudgetAmtInLakh": 0,
+											"totExpenditureAmtInLakh": 0
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
