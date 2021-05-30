@@ -8,6 +8,9 @@ import lombok.Data;
 @Component
 public class FMRReportFilterDTO {
 
+	
+	private long unitGroupRid;
+	
 	private long unitRid;
 	
 	private String year;
@@ -18,6 +21,20 @@ public class FMRReportFilterDTO {
 	
 	public FMRReportFilterDTO() {
 		
+	}
+
+	/**
+	 * @return the unitGroupRid
+	 */
+	public long getUnitGroupRid() {
+		return unitGroupRid;
+	}
+
+	/**
+	 * @param unitGroupRid the unitGroupRid to set
+	 */
+	public void setUnitGroupRid(long unitGroupRid) {
+		this.unitGroupRid = unitGroupRid;
 	}
 
 	/**
@@ -74,6 +91,15 @@ public class FMRReportFilterDTO {
 	 */
 	public void setReportingMonth(int reportingMonth) {
 		this.reportingMonth = reportingMonth;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "FMRReportFilterDTO [unitGroupRid=" + unitGroupRid + ", unitRid=" + unitRid + ", year=" + year
+				+ ", mainProgramHeadRid=" + mainProgramHeadRid + ", reportingMonth=" + reportingMonth + "]";
 	}
 	
 }

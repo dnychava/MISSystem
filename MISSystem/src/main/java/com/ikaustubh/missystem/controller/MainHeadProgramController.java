@@ -2,7 +2,6 @@ package com.ikaustubh.missystem.controller;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ikaustubh.missystem.dto.MainProgramDTO;
-import com.ikaustubh.missystem.entities.MainProgramEntity;
+import com.ikaustubh.missystem.entities.ActivityEntity;
 import com.ikaustubh.missystem.entities.MainProgramHeadEntity;
 import com.ikaustubh.missystem.repository.MainProgramHeadRepository;
 
@@ -36,7 +34,7 @@ public class MainHeadProgramController {
 		List<MainProgramDTO> mainProgramDTOs = new ArrayList<MainProgramDTO>();
 		if (mainProgramHeadOption.isPresent()) {
 			MainProgramHeadEntity mainProgramHeadEntity = mainProgramHeadOption.get();
-			for (MainProgramEntity mainProgramEntity : mainProgramHeadEntity.getMainProgramEntity()) {
+			for (ActivityEntity mainProgramEntity : mainProgramHeadEntity.getActivityEntities()) {
 				MainProgramDTO mainProgramDTO = new MainProgramDTO();
 				mainProgramDTO.setRid(mainProgramEntity.getRid());
 				mainProgramDTO.setName(mainProgramEntity.getName());

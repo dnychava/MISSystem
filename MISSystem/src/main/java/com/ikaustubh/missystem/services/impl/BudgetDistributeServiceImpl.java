@@ -1,39 +1,28 @@
 package com.ikaustubh.missystem.services.impl;
 
-import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
-import org.hibernate.Criteria;
-import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
-import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ikaustubh.missystem.dao.BudgetDistributeDao;
 import com.ikaustubh.missystem.entities.BudgetDistributeEntity;
+import com.ikaustubh.missystem.repository.BudgetDistributeRepository;
 import com.ikaustubh.missystem.services.BudgetDistributeService;
 
-@Repository
-@Transactional(readOnly = true)
+@Service
 public class BudgetDistributeServiceImpl implements BudgetDistributeService {
+	
+	@Autowired
+	private BudgetDistributeRepository budgetDistributeRepo;
 
-	@PersistenceContext
-	EntityManager entityManager;
-
+	@Transactional(isolation=Isolation.READ_COMMITTED, propagation=Propagation.REQUIRED, readOnly=true)
 	@Override
 	public Set<BudgetDistributeEntity> findByUnitRidAndSubActivityRids(long unitRid, String year,
 			Set<Long> subActivityRids) {
-		Session session = entityManager.unwrap(Session.class);
-		Criteria criteria = session.createCriteria(BudgetDistributeEntity.class);
-		criteria.add(Restrictions.eq("unitEntity.rid", unitRid));
-		criteria.add(Restrictions.in("mainSubActivityEntity.rid", subActivityRids));
-		criteria.add(Restrictions.eq("year", year));
-		criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
-
-		@SuppressWarnings("unchecked")
-		Set<BudgetDistributeEntity> returnVal = new HashSet<BudgetDistributeEntity>(criteria.list());
-		return returnVal;
+		return budgetDistributeRepo.findByUnitRidAndSubActivityRids(unitRid, year, subActivityRids);
 	}
 }

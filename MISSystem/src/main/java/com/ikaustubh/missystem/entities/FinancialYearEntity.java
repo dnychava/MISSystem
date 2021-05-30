@@ -1,7 +1,9 @@
 package com.ikaustubh.missystem.entities;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -13,10 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import org.springframework.context.annotation.Scope;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.UniqueConstraint;
 
 /**
  * 
@@ -25,60 +24,60 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  */
 
 @Entity
-@Table(name = "UNIT_TYPE")
-@Scope("global-session")
-public class UnitTypeEntity  {
+@Table(name = "FINANCIAL_YEAR", uniqueConstraints = {
+		@UniqueConstraint(columnNames = { "FINANCIAL_YEAR_RID", "FINANCIAL_YEAR" }, name = "UK__FINANCIAL_YEAR") })
+//@Scope("global-session")
+public class FinancialYearEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "UNIT_TYPE_RID", length = 10, nullable = false)
-	private long rid;
+	@Column(name = "FINANCIAL_YEAR_RID", length = 10, nullable = false)
+	protected long id;
 
-	@Column(name = "UNIT_TYPE_NAME", unique = true, nullable = false, length = 100)
-	private String name;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "financialYearEntity", cascade = CascadeType.ALL)
+	private List<MainProgramHeadEntity> mainProgramHeadEntities = new ArrayList<MainProgramHeadEntity>();
 
-	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "unitTypeEntity", cascade = CascadeType.ALL)
-	private Set<UnitEntity> unitEntity = new HashSet<UnitEntity>();
-	
-	@Column(name = "UNIT_TYPE_CREATED_BY", nullable = true, length = 15)
+	@Column(name = "FINANCIAL_YEAR", unique = true, nullable = false, length = 10)
+	private String year;
+
+	@Column(name = "FINANCIAL_YEAR_CREATED_BY", nullable = true, length = 15)
 	private String yCreatedBy;
 
-	@Column(name = "UNIT_TYPE_CREATED_TIMESTAMP", nullable = true)
+	@Column(name = "FINANCIAL_YEAR_CREATED_TIMESTAMP", nullable = true)
 	private LocalDateTime yCreatedDateAndTime;
 
-	@Column(name = "UNIT_TYPE_MODIFIED_BY", nullable = true, length = 15)
+	@Column(name = "FINANCIAL_YEAR_MODIFIED_BY", nullable = true, length = 15)
 	private String zModifiedBy;
 
-	@Column(name = "UNIT_TYPE_MODIFIED_TIMESTAMP", nullable = true)
+	@Column(name = "FINANCIAL_YEAR_MODIFIED_TIMESTAMP", nullable = true)
 	private LocalDateTime zModifiedDateAndTime;
 
 	/**
-	 * @return the name
+	 * @return the year
 	 */
-	public String getName() {
-		return name;
+	public String getYear() {
+		return year;
 	}
 
 	/**
-	 * @param name the name to set
+	 * @param year the year to set
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setYear(String year) {
+		this.year = year;
+	}
+	
+	/**
+	 * @return the mainProgramHeadEntities
+	 */
+	public List<MainProgramHeadEntity> getMainProgramHeadEntities() {
+		return mainProgramHeadEntities;
 	}
 
 	/**
-	 * @return the unitEntity
+	 * @param mainProgramHeadEntities the mainProgramHeadEntities to set
 	 */
-	public Set<UnitEntity> getUnitEntity() {
-		return unitEntity;
-	}
-
-	/**
-	 * @param unitEntity the unitEntity to set
-	 */
-	public void setUnitEntity(Set<UnitEntity> unitEntity) {
-		this.unitEntity = unitEntity;
+	public void setMainProgramHeadEntities(List<MainProgramHeadEntity> mainProgramHeadEntities) {
+		this.mainProgramHeadEntities = mainProgramHeadEntities;
 	}
 
 	/**
@@ -141,7 +140,7 @@ public class UnitTypeEntity  {
 	 * @return the rid
 	 */
 	public long getRid() {
-		return rid;
+		return id;
 	}
 
 	/* (non-Javadoc)
@@ -149,8 +148,8 @@ public class UnitTypeEntity  {
 	 */
 	@Override
 	public String toString() {
-		return "UnitTypeEntity [rid=" + rid + ", name=" + name + ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime="
-				+ yCreatedDateAndTime + ", zModifiedBy=" + zModifiedBy + ", zModifiedDateAndTime="
-				+ zModifiedDateAndTime + "]";
-	}
+		return "FinancialYearEntity [id=" + id + ", year=" + year + ", yCreatedBy=" + yCreatedBy
+				+ ", yCreatedDateAndTime=" + yCreatedDateAndTime + ", zModifiedBy=" + zModifiedBy
+				+ ", zModifiedDateAndTime=" + zModifiedDateAndTime + "]";
+	}	
 }

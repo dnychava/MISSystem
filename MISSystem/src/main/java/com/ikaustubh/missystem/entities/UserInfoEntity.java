@@ -23,6 +23,7 @@ import javax.persistence.Table;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.web.context.annotation.SessionScope;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -35,7 +36,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "USER_INFO")
-@Scope(value = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)
+@SessionScope(proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class UserInfoEntity  { 
 
 	@Id
@@ -56,7 +57,7 @@ public class UserInfoEntity  {
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name="USER_ROLE", 
     		joinColumns = {@JoinColumn(name="USER_ROLE__USER_INFO_RID", nullable=false, referencedColumnName="USER_INFO_RID")},
-    		inverseJoinColumns = {@JoinColumn(name="USER_ROLE__ROLE_RID", nullable=false, referencedColumnName="ROLE_RID")}
+    		inverseJoinColumns = {@JoinColumn(name="USER_ROLE__ROLE_RID", nullable=false, referencedColumnName="ROLE_TBL_RID")}
     )
     private Set<RoleEntity> roles = new HashSet<RoleEntity>();
     

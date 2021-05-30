@@ -15,7 +15,7 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	
 	private String year;
 	
-	private String reportingMonthStr;
+	private int reportingMonth;
 
 	private String transactionMode;
 	
@@ -37,8 +37,10 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	
 	private BigDecimal prograsiveAmtInLakh;
 	
-	private BigDecimal expenditureAmtInLakh;
-
+	private BigDecimal expenditureAmtInLakh = BigDecimal.ZERO;
+	
+	private BigDecimal expenditureAmt = BigDecimal.ZERO;
+	
 	/**
 	 * @return the expenditureRid
 	 */
@@ -68,17 +70,17 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	}
 
 	/**
-	 * @return the reportingMonthStr
+	 * @return the reportingMonth
 	 */
-	public String getReportingMonthStr() {
-		return reportingMonthStr;
+	public int getReportingMonth() {
+		return reportingMonth;
 	}
 
 	/**
 	 * @param reportingMonth the reportingMonth to set
 	 */
-	public void setReportingMonthStr(String reportingMonthStr) {
-		this.reportingMonthStr = reportingMonthStr;
+	public void setReportingMonth(int reportingMonth) {
+		this.reportingMonth = reportingMonth;
 	}
 
 	/**
@@ -150,7 +152,7 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	public void setNewCode(String newCode) {
 		this.newCode = newCode;
 	}
-	
+
 	/**
 	 * @return the oldCode
 	 */
@@ -180,17 +182,17 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	}
 
 	/**
-	 * @return the budgetAmt
+	 * @return the budgetAmtInLakh
 	 */
 	public BigDecimal getBudgetAmtInLakh() {
 		return budgetAmtInLakh;
 	}
 
 	/**
-	 * @param budgetAmt the budgetAmt to set
+	 * @param budgetAmtInLakh the budgetAmtInLakh to set
 	 */
-	public void setBudgetAmtInLakh(BigDecimal budgetAmt) {
-		this.budgetAmtInLakh = budgetAmt;
+	public void setBudgetAmtInLakh(BigDecimal budgetAmtInLakh) {
+		this.budgetAmtInLakh = budgetAmtInLakh;
 	}
 
 	/**
@@ -235,6 +237,20 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 		this.expenditureAmtInLakh = expenditureAmtInLakh;
 	}
 
+	/**
+	 * @return the expenditureAmt
+	 */
+	public BigDecimal getExpenditureAmt() {
+		return expenditureAmt;
+	}
+
+	/**
+	 * @param expenditureAmt the expenditureAmt to set
+	 */
+	public void setExpenditureAmt(BigDecimal expenditureAmt) {
+		this.expenditureAmt = expenditureAmt;
+	}
+
 	@Override
 	public int compareTo(ExpenditureDTO obj) {
 		
@@ -247,7 +263,7 @@ public class ExpenditureDTO implements Comparable<ExpenditureDTO> {
 	@Override
 	public String toString() {
 		return "ExpenditureDTO [expenditureRid=" + expenditureRid + ", year=" + year + ", reportingMonthStr="
-				+ reportingMonthStr + ", transactionMode=" + transactionMode + ", unitRid=" + unitRid + ", unitName="
+				+ reportingMonth + ", transactionMode=" + transactionMode + ", unitRid=" + unitRid + ", unitName="
 				+ unitName + ", mainSubActivityRid=" + mainSubActivityRid + ", newCode=" + newCode + ", oldCode="
 				+ oldCode + ", activityName=" + activityName + ", budgetAmtInLakh=" + budgetAmtInLakh
 				+ ", expenditureDtlRid=" + expenditureDtlRid + ", prograsiveAmtInLakh=" + prograsiveAmtInLakh

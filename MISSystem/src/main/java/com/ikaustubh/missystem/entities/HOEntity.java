@@ -2,8 +2,6 @@ package com.ikaustubh.missystem.entities;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -13,13 +11,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.springframework.context.annotation.Scope;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * 
@@ -49,9 +44,9 @@ public class HOEntity implements Serializable {
 	@JoinColumn(name = "HO_ADDRESS__ADDRESS_ID", nullable = false, referencedColumnName = "ADDRESS_RID")
 	private AddressEntity addressEntity;
 
-	@JsonIgnore
+	/*@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "hoEntity", cascade = CascadeType.ALL)
-	private Set<UnitEntity> unitEntity = new HashSet<UnitEntity>();
+	private Set<UnitEntity> unitEntity = new HashSet<UnitEntity>();*/
 
 	@Column(name = "HO_CREATED_BY", nullable = true, length = 15)
 	private String yCreatedBy;
@@ -95,17 +90,17 @@ public class HOEntity implements Serializable {
 
 	/**
 	 * @return the unitEntity
-	 */
+	 *//*
 	public Set<UnitEntity> getUnitEntity() {
 		return unitEntity;
 	}
 
-	/**
+	*//**
 	 * @param unitEntity the unitEntity to set
-	 */
+	 *//*
 	public void setUnitEntity(Set<UnitEntity> unitEntity) {
 		this.unitEntity = unitEntity;
-	}
+	}*/
 
 	/**
 	 * @return the yCreatedBy

@@ -26,32 +26,32 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  *
  */
 @Entity
-@Table(name = "ROLE")
+@Table(name = "ROLE_TBL")
 @Scope("session")
 public class RoleEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "ROLE_RID", nullable = false, length = 10)
+	@Column(name = "ROLE_TBL_RID", nullable = false, length = 10)
 	private long roleRID;
 
-	@Column(name = "ROLE_TYPE_NAME", nullable = false, length = 50)
+	@Column(name = "ROLE_TBL_TYPE_NAME", nullable = false, length = 50)
 	private String roleTypeName;
 
 	@JsonIgnore
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "roles")
 	private Set<UserInfoEntity> userInfo = new HashSet<UserInfoEntity>();
 
-	@Column(name = "ROLE_CREATED_BY", nullable = true, length = 15)
+	@Column(name = "ROLE_TBL_CREATED_BY", nullable = true, length = 15)
 	private String yCreatedBy;
 
-	@Column(name = "ROLE_CREATED_TIMESTAMP", nullable = true)
+	@Column(name = "ROLE_TBL_CREATED_TIMESTAMP", nullable = true)
 	private LocalDateTime yCreatedDateAndTime;
 
-	@Column(name = "ROLE_MODIFIED_BY", nullable = true, length = 15)
+	@Column(name = "ROLE_TBL_MODIFIED_BY", nullable = true, length = 15)
 	private String zModifiedBy;
 
-	@Column(name = "ROLE_MODIFIED_TIMESTAMP", nullable = true)
+	@Column(name = "ROLE_TBL_MODIFIED_TIMESTAMP", nullable = true)
 	private LocalDateTime zModifiedDateAndTime;
 
 	/**

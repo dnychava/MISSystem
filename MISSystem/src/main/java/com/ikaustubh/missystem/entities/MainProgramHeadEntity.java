@@ -1,8 +1,8 @@
 package com.ikaustubh.missystem.entities;
 
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,21 +11,26 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 /**
+ * This class has two type of <code>MAIN_PROGRAM_HEAD</code>.<BR>
+ * 1. NHM <BR>
+ * 2. NUHM
  * 
- * @author Dnyaneshwar
+ * @author Dnyaneshwar Chavan
+ * @since 25-Aug-2019
  *
  */
 
 @Entity
-@Table(name = "MAIN_PROGRAM_HEAD", uniqueConstraints = { @UniqueConstraint(columnNames = { "MAIN_PROGRAM_HEAD_YEAR",
-		"MAIN_PROGRAM_HEAD_NAME", "MAIN_PROGRAM_HEAD_CODE" }, name = "UK__MAIN_PROGRAM_HEAD__All_MAIN_FIELDS") })
+@Table(name = "MAIN_PROGRAM_HEAD")
 //@Scope("global-session")
-public class MainProgramHeadEntity extends AbstractMainProgramEntity {
+public class MainProgramHeadEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,15 +38,16 @@ public class MainProgramHeadEntity extends AbstractMainProgramEntity {
 	protected long id;
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "mainProgramHeadEntity", cascade = CascadeType.ALL)
-	private Set<MainProgramEntity> mainProgramEntity = new HashSet<MainProgramEntity>();
+	private List<ActivityEntity> activityEntities = new ArrayList<ActivityEntity>();
 
-	@Column(name = "MAIN_PROGRAM_HEAD_YEAR", unique = true, nullable = false, length = 10)
-	private String year;
+	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "MAIN_PROGRAM_HEAD__FINANCIAL_YEAR_RID", nullable = false, referencedColumnName = "FINANCIAL_YEAR_RID")
+	private FinancialYearEntity financialYearEntity;
 
-	@Column(name = "MAIN_PROGRAM_HEAD_NAME", unique = true, nullable = false, length = 100)
+	@Column(name = "MAIN_PROGRAM_HEAD_NAME", nullable = false, length = 100)
 	protected String name;
 
-	@Column(name = "MAIN_PROGRAM_HEAD_CODE", unique = true, nullable = false, length = 20)
+	@Column(name = "MAIN_PROGRAM_HEAD_CODE", nullable = false, length = 20)
 	protected String newCode;
 
 	@Column(name = "MAIN_PROGRAM_HEAD_CREATED_BY", nullable = true, length = 15)
@@ -57,31 +63,31 @@ public class MainProgramHeadEntity extends AbstractMainProgramEntity {
 	private LocalDateTime zModifiedDateAndTime;
 
 	/**
-	 * @return the mainProgramEntity
+	 * @return the activityEntities
 	 */
-	public Set<MainProgramEntity> getMainProgramEntity() {
-		return mainProgramEntity;
+	public List<ActivityEntity> getActivityEntities() {
+		return activityEntities;
 	}
 
 	/**
-	 * @param mainProgramEntity the mainProgramEntity to set
+	 * @param activityEntities the activityEntities to set
 	 */
-	public void setMainProgramEntity(Set<MainProgramEntity> mainProgramEntity) {
-		this.mainProgramEntity = mainProgramEntity;
+	public void setActivityEntities(List<ActivityEntity> activityEntities) {
+		this.activityEntities = activityEntities;
 	}
 
 	/**
-	 * @return the year
+	 * @return the financialYearEntity
 	 */
-	public String getYear() {
-		return year;
+	public FinancialYearEntity getFinancialYearEntity() {
+		return financialYearEntity;
 	}
 
 	/**
-	 * @param year the year to set
+	 * @param financialYearEntity the financialYearEntity to set
 	 */
-	public void setYear(String year) {
-		this.year = year;
+	public void setFinancialYearEntity(FinancialYearEntity financialYearEntity) {
+		this.financialYearEntity = financialYearEntity;
 	}
 
 	/**
@@ -175,13 +181,15 @@ public class MainProgramHeadEntity extends AbstractMainProgramEntity {
 		return id;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "MainProgramHeadEntity [rid=" + id + ", year=" + year + ", name=" + name + ", newCode=" + newCode
-				+ ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime=" + yCreatedDateAndTime + ", zModifiedBy="
-				+ zModifiedBy + ", zModifiedDateAndTime=" + zModifiedDateAndTime + "]";
+		return "MainProgramHeadEntity [id=" + id + ", name=" + name + ", newCode=" + newCode + ", yCreatedBy="
+				+ yCreatedBy + ", yCreatedDateAndTime=" + yCreatedDateAndTime + ", zModifiedBy=" + zModifiedBy
+				+ ", zModifiedDateAndTime=" + zModifiedDateAndTime + "]";
 	}
 }

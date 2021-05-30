@@ -10,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -21,9 +22,9 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "BUDGET_DISTRIBUTE")
-public class BudgetDistributeEntity  {
-
+@Table(name = "BUDGET_DISTRIBUTE", indexes = {
+		@Index(columnList = "BUDGET_DISTRIBUTE__UNIT_RID, BUDGET_DISTRIBUTE__ACTIVITY_RID, BUDGET_DISTRIBUTE_YEAR", name="distribute_index") })
+public class BudgetDistributeEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -35,28 +36,16 @@ public class BudgetDistributeEntity  {
 	private UnitEntity unitEntity;
 	
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "BUDGET_DISTRIBUTE__MAIN_PROGRAM_RID", nullable = true, referencedColumnName = "MAIN_PROGRAM_RID")
-	private MainProgramEntity mainProgramEntity;
-	
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "BUDGET_DISTRIBUTE__MAIN_SUB_PROGRAM_RID", nullable = true, referencedColumnName = "MAIN_SUB_PROGRAM_RID")
-	private MainSubProgramEntity mainSubProgramEntity;
-	
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "BUDGET_DISTRIBUTE__MAIN_ACTIVITY_RID", nullable = true, referencedColumnName = "MAIN_ACTIVITY_RID")
-	private MainActivityEntity mainActivityEntity;
-	
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "BUDGET_DISTRIBUTE__MAIN_SUB_ACTIVITY_RID", nullable = true, referencedColumnName = "MAIN_SUB_ACTIVITY_RID")
-	private MainSubActivityEntity mainSubActivityEntity;
-	
+	@JoinColumn(name = "BUDGET_DISTRIBUTE__ACTIVITY_RID", nullable = true, referencedColumnName = "ACTIVITY_RID")
+	private ActivityEntity activityEntity;
+
 	@Column(name = "BUDGET_DISTRIBUTE_YEAR", nullable = false, length = 10)
 	private String year;
 
-	@Column(name = "BUDGET_DISTRIBUTE_AMT", nullable = false, precision=19, scale=2)
+	@Column(name = "BUDGET_DISTRIBUTE_AMT", nullable = false, precision = 19, scale = 2)
 	private BigDecimal amt = new BigDecimal("0.00");
-	
-	@Column(name = "BUDGET_DISTRIBUTE_AMT_IN_LAKH", nullable = false, precision=19, scale=2)
+
+	@Column(name = "BUDGET_DISTRIBUTE_AMT_IN_LAKH", nullable = false, precision = 19, scale = 2)
 	private BigDecimal amtInLakh = new BigDecimal("0.00");
 
 	@Column(name = "BUDGET_DISTRIBUTE_CREATED_BY", nullable = true, length = 15)
@@ -68,7 +57,7 @@ public class BudgetDistributeEntity  {
 	@Column(name = "BUDGET_DISTRIBUTE_MODIFIED_BY", nullable = true, length = 15)
 	private String zModifiedBy;
 
-	@Column(name = "BUDGET_DISTRIBUTE_MODIFIED_TIMESTAMP" + "", nullable = true)
+	@Column(name = "BUDGET_DISTRIBUTE_MODIFIED_TIMESTAMP", nullable = true)
 	private LocalDateTime zModifiedDateAndTime;
 
 	/**
@@ -86,59 +75,17 @@ public class BudgetDistributeEntity  {
 	}
 
 	/**
-	 * @return the mainProgramEntity
+	 * @return the activityEntity
 	 */
-	public MainProgramEntity getMainProgramEntity() {
-		return mainProgramEntity;
+	public ActivityEntity getActivityEntity() {
+		return activityEntity;
 	}
 
 	/**
-	 * @param mainProgramEntity the mainProgramEntity to set
+	 * @param activityEntity the activityEntity to set
 	 */
-	public void setMainProgramEntity(MainProgramEntity mainProgramEntity) {
-		this.mainProgramEntity = mainProgramEntity;
-	}
-
-	/**
-	 * @return the mainSubProgramEntity
-	 */
-	public MainSubProgramEntity getMainSubProgramEntity() {
-		return mainSubProgramEntity;
-	}
-
-	/**
-	 * @param mainSubProgramEntity the mainSubProgramEntity to set
-	 */
-	public void setMainSubProgramEntity(MainSubProgramEntity mainSubProgramEntity) {
-		this.mainSubProgramEntity = mainSubProgramEntity;
-	}
-
-	/**
-	 * @return the mainActivityEntity
-	 */
-	public MainActivityEntity getMainActivityEntity() {
-		return mainActivityEntity;
-	}
-
-	/**
-	 * @param mainActivityEntity the mainActivityEntity to set
-	 */
-	public void setMainActivityEntity(MainActivityEntity mainActivityEntity) {
-		this.mainActivityEntity = mainActivityEntity;
-	}
-
-	/**
-	 * @return the mainSubActivityEntity
-	 */
-	public MainSubActivityEntity getMainSubActivityEntity() {
-		return mainSubActivityEntity;
-	}
-
-	/**
-	 * @param mainSubActivityEntity the mainSubActivityEntity to set
-	 */
-	public void setMainSubActivityEntity(MainSubActivityEntity mainSubActivityEntity) {
-		this.mainSubActivityEntity = mainSubActivityEntity;
+	public void setActivityEntity(ActivityEntity activityEntity) {
+		this.activityEntity = activityEntity;
 	}
 
 	/**
@@ -246,7 +193,9 @@ public class BudgetDistributeEntity  {
 		return rid;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -255,7 +204,5 @@ public class BudgetDistributeEntity  {
 				+ ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime=" + yCreatedDateAndTime + ", zModifiedBy="
 				+ zModifiedBy + ", zModifiedDateAndTime=" + zModifiedDateAndTime + "]";
 	}
-	
-	
-	
+
 }

@@ -13,8 +13,6 @@ import com.ikaustubh.missystem.entities.MainProgramHeadEntity;
 @Repository("mainProgramHeadRepository")
 public interface MainProgramHeadRepository extends JpaRepository<MainProgramHeadEntity, Long>{
 	
-	public MainProgramHeadEntity findByIdAndYear(long id, String year);
-	
 
 	
 }

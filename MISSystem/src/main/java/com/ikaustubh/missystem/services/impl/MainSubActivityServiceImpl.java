@@ -3,35 +3,27 @@ package com.ikaustubh.missystem.services.impl;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
-import org.hibernate.Criteria;
-import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
-import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ikaustubh.missystem.entities.MainSubActivityEntity;
+import com.ikaustubh.missystem.dao.MainSubActivityDao;
+import com.ikaustubh.missystem.entities.ActivityEntity;
 import com.ikaustubh.missystem.services.MainSubActivityService;
 
-@Repository
-@Transactional(readOnly = true)
+@Service
+@Transactional(isolation=Isolation.READ_COMMITTED, propagation=Propagation.REQUIRES_NEW, readOnly=true)
 public class MainSubActivityServiceImpl implements MainSubActivityService {
 
-	@PersistenceContext
-	EntityManager entityManager;
-
+	@Autowired
+	private MainSubActivityDao mainSubActivityDao;
+	
+	@Transactional(isolation=Isolation.READ_COMMITTED, propagation=Propagation.REQUIRES_NEW, readOnly=true)
 	@Override
-	@SuppressWarnings("unchecked")
-	public List<MainSubActivityEntity> findByRidsAndActivityName(Set<String> newCodes, Set<String> activityNames) {
-		Session session = entityManager.unwrap(Session.class);
-		Criteria criteria = session.createCriteria(MainSubActivityEntity.class);
-		criteria.add(Restrictions.in("newCode", newCodes));
-		criteria.add(Restrictions.in("name", activityNames));
-		criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
-
-		List<MainSubActivityEntity> list = criteria.list();
-		return list;
+	public List<ActivityEntity> findByRidsAndActivityName(Set<String> newCodes, Set<String> activityNames) {
+		
+		return mainSubActivityDao.findByRidsAndActivityName(newCodes, activityNames);
 	}
 }

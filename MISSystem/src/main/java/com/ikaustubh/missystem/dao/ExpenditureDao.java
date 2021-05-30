@@ -1,4 +1,4 @@
-package com.ikaustubh.missystem.services;
+package com.ikaustubh.missystem.dao;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -11,7 +11,7 @@ import com.ikaustubh.missystem.entities.BudgetDistributeEntity;
 import com.ikaustubh.missystem.entities.ExpenditureEntity;
 import com.ikaustubh.missystem.wrapper.ExpenditureWrapper;
 
-public interface ExpenditureService {
+public interface ExpenditureDao {
 
 	public Set<ExpenditureEntity> findByUnitRidAndSubActivityRids(long unitRid, Set<Long> subActivityRids);
 
@@ -31,9 +31,7 @@ public interface ExpenditureService {
 	
 	public List<BudgetDistributeEntity> findBudgetList(String unitName, String year);
 	
-	public List<ExpenditureEntity> saveAll(List<ExpenditureEntity> entities);
-
-	public void saveOrUpdate(List<ExpenditureEntity> expenditureEntities);
+	public void saveOrUpdate(ExpenditureEntity entity);
 	
 	/**
 	 * 
@@ -59,4 +57,5 @@ public interface ExpenditureService {
 	 * @return
 	 */
 	public List<BudgetDistributeEntity> getAllBudgetSharedUsingFilter(FMRReportFilterDTO fmrReportFilterDTO, List<Long> activityRidList);
+
 }

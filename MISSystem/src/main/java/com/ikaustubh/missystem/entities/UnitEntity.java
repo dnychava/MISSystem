@@ -2,9 +2,7 @@ package com.ikaustubh.missystem.entities;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,17 +14,20 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import org.springframework.context.annotation.Scope;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 /**
+ * This entity represent of two type roles.<BR>
+ * 1. It self Main unint.<BR>
+ * 2. It sub unit has main unit reference.<BR>
+ * Eg. Self join, Emp and manager relationship. 
  * 
- * @author Dnyaneshwar
- *
+ * @author Dnyaneshwar Chavan
+ * @since 02-Feb-2020
  */
 
 @Entity
@@ -43,18 +44,34 @@ public class UnitEntity {
 	@JoinColumn(name="UNIT__UNIT_TYPE_RID", nullable=false, referencedColumnName="UNIT_TYPE_RID")
 	private UnitTypeEntity unitTypeEntity;
 	
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL )
-	@JoinColumn(name="UNIT__HO_RID", nullable=false, referencedColumnName="HO_RID")
-	private HOEntity hoEntity;
+	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@JoinColumn(name = "UNIT__MAIN_UNIT_RID", nullable = true, referencedColumnName = "UNIT_RID")
+	private UnitEntity mainUnit;
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "unitEntityParent", cascade = CascadeType.ALL)
-	private List<UnitDtlEntity> unitDtlsEntity = new ArrayList<UnitDtlEntity>();
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "mainUnit", cascade = CascadeType.ALL)
+	private List<UnitEntity> mainUnitEntities = new ArrayList<UnitEntity>();
 	
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "unitEntity", cascade = CascadeType.ALL)
-	private List<UserInfoEntity> userInfoEntity = new ArrayList<UserInfoEntity>();
-
+	private List<UserInfoEntity> userInfoEntities = new ArrayList<UserInfoEntity>();
+	
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "unitEntity", cascade = CascadeType.ALL)
+	private List<BudgetDistributeEntity> budgetDistributeEntities = new ArrayList<BudgetDistributeEntity>();
+	
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "unitEntity", cascade = CascadeType.ALL)
+	private List<ExpenditureEntity> expenditureEntities = new ArrayList<ExpenditureEntity>();
+	
+	@JsonIgnore
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "UNIT__ADDRESS_RID", nullable = false, referencedColumnName = "ADDRESS_RID")
+	private AddressEntity addressEntity;
+	
+	@Column(name = "UNIT_NAME", unique = true, nullable = false, length = 100)
+	private String name;
+	
 	@Column(name = "UNIT_CREATED_BY", nullable = true, length = 15)
 	private String yCreatedBy;
 
@@ -66,7 +83,7 @@ public class UnitEntity {
 
 	@Column(name = "UNIT_MODIFIED_TIMESTAMP", nullable = true)
 	private LocalDateTime zModifiedDateAndTime;
-	
+
 	/**
 	 * @return the unitTypeEntity
 	 */
@@ -82,45 +99,87 @@ public class UnitEntity {
 	}
 
 	/**
-	 * @return the hoEntity
+	 * @return the mainUnit
 	 */
-	public HOEntity getHoEntity() {
-		return hoEntity;
+	public UnitEntity getMainUnit() {
+		return mainUnit;
 	}
 
 	/**
-	 * @param hoEntity the hoEntity to set
+	 * @param mainUnit the mainUnit to set
 	 */
-	public void setHoEntity(HOEntity hoEntity) {
-		this.hoEntity = hoEntity;
+	public void setMainUnit(UnitEntity mainUnit) {
+		this.mainUnit = mainUnit;
 	}
 
 	/**
-	 * @return the unitDtlsEntity
+	 * @return the mainUnitEntities
 	 */
-	public List<UnitDtlEntity> getUnitDtlsEntity() {
-		return unitDtlsEntity;
+	public List<UnitEntity> getMainUnitEntities() {
+		return mainUnitEntities;
 	}
 
 	/**
-	 * @param unitDtlsEntity the unitDtlsEntity to set
+	 * @param mainUnitEntities the mainUnitEntities to set
 	 */
-	public void setUnitDtlsEntity(List<UnitDtlEntity> unitDtlsEntity) {
-		this.unitDtlsEntity = unitDtlsEntity;
+	public void setMainUnitEntities(List<UnitEntity> mainUnitEntities) {
+		this.mainUnitEntities = mainUnitEntities;
 	}
 
 	/**
-	 * @return the userInfoEntity
+	 * @return the userInfoEntities
 	 */
-	public List<UserInfoEntity> getUserInfoEntity() {
-		return userInfoEntity;
+	public List<UserInfoEntity> getUserInfoEntities() {
+		return userInfoEntities;
 	}
 
 	/**
-	 * @param userInfoEntity the userInfoEntity to set
+	 * @param userInfoEntities the userInfoEntities to set
 	 */
-	public void setUserInfoEntity(List<UserInfoEntity> userInfoEntity) {
-		this.userInfoEntity = userInfoEntity;
+	public void setUserInfoEntities(List<UserInfoEntity> userInfoEntities) {
+		this.userInfoEntities = userInfoEntities;
+	}
+
+	/**
+	 * @return the budgetDistributeEntities
+	 */
+	public List<BudgetDistributeEntity> getBudgetDistributeEntities() {
+		return budgetDistributeEntities;
+	}
+
+	/**
+	 * @param budgetDistributeEntities the budgetDistributeEntities to set
+	 */
+	public void setBudgetDistributeEntities(List<BudgetDistributeEntity> budgetDistributeEntities) {
+		this.budgetDistributeEntities = budgetDistributeEntities;
+	}
+
+	/**
+	 * @return the addressEntity
+	 */
+	public AddressEntity getAddressEntity() {
+		return addressEntity;
+	}
+
+	/**
+	 * @param addressEntity the addressEntity to set
+	 */
+	public void setAddressEntity(AddressEntity addressEntity) {
+		this.addressEntity = addressEntity;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	/**
@@ -186,12 +245,15 @@ public class UnitEntity {
 		return rid;
 	}
 
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "UnitEntity [rid=" + rid + ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime=" + yCreatedDateAndTime
-				+ ", zModifiedBy=" + zModifiedBy + ", zModifiedDateAndTime=" + zModifiedDateAndTime + "]";
+		return "UnitEntity [rid=" + rid + ", name=" + name + ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime="
+				+ yCreatedDateAndTime + ", zModifiedBy=" + zModifiedBy + ", zModifiedDateAndTime="
+				+ zModifiedDateAndTime + "]";
 	}
+	
 }

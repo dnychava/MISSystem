@@ -12,6 +12,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -24,40 +25,30 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "EXPENDITURE")
+@Table(name = "EXPENDITURE", indexes = {
+		@Index(columnList = " EXPENDITURE_RID, EXPENDITURE__UNIT_RID, "
+				+ "EXPENDITURE__ACTIVITY_RID, EXPENDITURE__RECORD_STATUS_RID, EXPENDITURE_YEAR, EXPENDITURE_REPORTING_MONTH", 
+				name = "expenditure_index") })
 public class ExpenditureEntity {
-
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "EXPENDITURE_RID", length = 10, nullable = false)
 	protected long rid;
 
-	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "EXPENDITURE__UNIT_RID", nullable = false, referencedColumnName = "UNIT_RID")
 	private UnitEntity unitEntity;
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "EXPENDITURE__MAIN_PROGRAM_RID", nullable = true, referencedColumnName = "MAIN_PROGRAM_RID")
-	private MainProgramEntity mainProgramEntity;
+	@JoinColumn(name = "EXPENDITURE__ACTIVITY_RID", nullable = true, referencedColumnName = "ACTIVITY_RID")
+	private ActivityEntity activityEntity;
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "EXPENDITURE__MAIN_SUB_PROGRAM_RID", nullable = true, referencedColumnName = "MAIN_SUB_PROGRAM_RID")
-	private MainSubProgramEntity mainSubProgramEntity;
-
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "EXPENDITURE__MAIN_ACTIVITY_RID", nullable = true, referencedColumnName = "MAIN_ACTIVITY_RID")
-	private MainActivityEntity mainActivityEntity;
-
-	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinColumn(name = "EXPENDITURE__MAIN_SUB_ACTIVITY_RID", nullable = true, referencedColumnName = "MAIN_SUB_ACTIVITY_RID")
-	private MainSubActivityEntity mainSubActivityEntity;
-
-	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "EXPENDITURE__RECORD_STATUS_RID", nullable = false, referencedColumnName = "RECORD_STATUS_RID")
 	private RecordStatusEntity recordStatusEntity;
 
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "expenditureEntity", cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "expenditureEntity", cascade = CascadeType.ALL)
 	private Set<ExpenditureDtlEntity> expenditureDtlEntity = new HashSet<ExpenditureDtlEntity>();
 
 	@Column(name = "EXPENDITURE_YEAR", nullable = false, length = 10)
@@ -99,59 +90,17 @@ public class ExpenditureEntity {
 	}
 
 	/**
-	 * @return the mainProgramEntity
+	 * @return the activityEntity
 	 */
-	public MainProgramEntity getMainProgramEntity() {
-		return mainProgramEntity;
+	public ActivityEntity getActivityEntity() {
+		return activityEntity;
 	}
 
 	/**
-	 * @param mainProgramEntity the mainProgramEntity to set
+	 * @param activityEntity the activityEntity to set
 	 */
-	public void setMainProgramEntity(MainProgramEntity mainProgramEntity) {
-		this.mainProgramEntity = mainProgramEntity;
-	}
-
-	/**
-	 * @return the mainSubProgramEntity
-	 */
-	public MainSubProgramEntity getMainSubProgramEntity() {
-		return mainSubProgramEntity;
-	}
-
-	/**
-	 * @param mainSubProgramEntity the mainSubProgramEntity to set
-	 */
-	public void setMainSubProgramEntity(MainSubProgramEntity mainSubProgramEntity) {
-		this.mainSubProgramEntity = mainSubProgramEntity;
-	}
-
-	/**
-	 * @return the mainActivityEntity
-	 */
-	public MainActivityEntity getMainActivityEntity() {
-		return mainActivityEntity;
-	}
-
-	/**
-	 * @param mainActivityEntity the mainActivityEntity to set
-	 */
-	public void setMainActivityEntity(MainActivityEntity mainActivityEntity) {
-		this.mainActivityEntity = mainActivityEntity;
-	}
-
-	/**
-	 * @return the mainSubActivityEntity
-	 */
-	public MainSubActivityEntity getMainSubActivityEntity() {
-		return mainSubActivityEntity;
-	}
-
-	/**
-	 * @param mainSubActivityEntity the mainSubActivityEntity to set
-	 */
-	public void setMainSubActivityEntity(MainSubActivityEntity mainSubActivityEntity) {
-		this.mainSubActivityEntity = mainSubActivityEntity;
+	public void setActivityEntity(ActivityEntity activityEntity) {
+		this.activityEntity = activityEntity;
 	}
 
 	/**
@@ -301,7 +250,9 @@ public class ExpenditureEntity {
 		return rid;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -310,5 +261,5 @@ public class ExpenditureEntity {
 				+ totAmt + ", totAmtInLakh=" + totAmtInLakh + ", yCreatedBy=" + yCreatedBy + ", yCreatedDateAndTime="
 				+ yCreatedDateAndTime + ", zModifiedBy=" + zModifiedBy + ", zModifiedDateAndTime="
 				+ zModifiedDateAndTime + "]";
-	}	
+	}
 }
